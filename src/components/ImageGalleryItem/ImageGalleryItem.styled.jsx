@@ -8,8 +8,8 @@ export const GalleryItemStyled = styled.li`
 `;
 
 export const GalleryImgStyled = styled.img`
-  min-width: 440px;
-  min-height: 340px;
+  min-width: 40px;
+  min-height: 300px;
   max-width: 440px;
   max-height: 340px;
   object-fit: cover;
