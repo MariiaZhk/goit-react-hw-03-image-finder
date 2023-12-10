@@ -30,7 +30,7 @@ export const SearchFormStyled = styled.form`
   justify-content: center;
   gap: 10px;
   width: 800px;
-  margin: 40px auto;
+  margin: 30px auto;
 `;
 
 export const SearchInputStyled = styled.input`

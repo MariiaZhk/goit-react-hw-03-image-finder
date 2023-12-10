@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  margin: 30px;
-  padding: 10px;
+  margin: 20px;
+  padding: 5px;
 `;
 
 export const GalleryList = styled.ul`
