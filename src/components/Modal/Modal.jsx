@@ -1,12 +1,14 @@
 import { Component } from 'react';
-import { ModalStyled, Overlay } from '../Modal.styled';
+import { ModalStyled, Overlay } from './Modal.styled';
 
 export class Modal extends Component {
   componentDidMount() {
     document.addEventListener('keydown', this.handleKeyDown);
+    document.body.style.overflow = 'hidden';
   }
 
   componentWillUnmount() {
+    document.body.style.overflow = 'visible';
     document.removeEventListener('keydown', this.handleKeyDown);
   }
 

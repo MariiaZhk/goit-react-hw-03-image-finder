@@ -6,7 +6,7 @@ import { ImageGallery } from '../ImageGallery/ImageGallery';
 import { LoadMoreButton } from '../LoadMoreButton/LoadMoreButton';
 import { AppSection } from './App.styled';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-import { Modal } from 'components/Modal/Modal/Modal';
+import { Modal } from 'components/Modal/Modal';
 
 const paramsNotify = {
   width: '600px',
@@ -111,7 +111,11 @@ export class App extends Component {
         )}
 
         {isModalOpen && (
-          <Modal modalImgURL={modalImgURL} onCloseModal={this.onCloseModal} />
+          <Modal
+            modalImgURL={modalImgURL}
+            onCloseModal={this.onCloseModal}
+            isModalOpen={isModalOpen}
+          />
         )}
       </AppSection>
     );
