@@ -1,16 +1,17 @@
 import { ImageGalleryItem } from 'components/ImageGalleryItem/ImageGalleryItem';
 import { GalleryList } from './ImageGallery.styled';
+import { nanoid } from 'nanoid';
 
-export const ImageGallery = ({ images }) => {
+export const ImageGallery = ({ images, onImageClick }) => {
   return (
     <GalleryList>
-      {images.map(({ id, tags, webformatURL, largeImageURL }) => {
+      {images.map(({ webformatURL, largeImageURL }) => {
         return (
           <ImageGalleryItem
-            key={id}
-            //   tags={tags}
+            key={nanoid()}
             webformatURL={webformatURL}
             largeImageURL={largeImageURL}
+            onImageClick={onImageClick}
           />
         );
       })}

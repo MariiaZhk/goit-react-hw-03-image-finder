@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const LoadBtnStyled = styled.button`
   width: 200px;
-  height: 50px;
+  height: 48px;
   margin: 0 auto;
   padding: 10px 16px;
   border-radius: 2px;
@@ -13,13 +13,10 @@ export const LoadBtnStyled = styled.button`
   color: #fff;
   border: 0;
   text-decoration: none;
-  cursor: pointer;
-  font-family: inherit;
   font-size: 18px;
   line-height: 24px;
   font-style: normal;
   font-weight: 500;
-  min-width: 180px;
   box-shadow: 0 4px 4px 0 rgba(134, 134, 134, 0.323),
     0 4px 4px 0 rgba(101, 101, 101, 0.19);
 

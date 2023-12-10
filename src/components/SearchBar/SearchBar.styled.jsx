@@ -23,14 +23,12 @@ export const SearchBtnStyled = styled.button`
   display: inline-block;
   width: 48px;
   height: 48px;
-  border: 0;
-  background-image: url('https://image.flaticon.com/icons/svg/149/149852.svg');
+  background-image: url('https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.svg');
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.6;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
   outline: none;
 
   &:hover {
@@ -55,12 +53,11 @@ export const SearchInputStyled = styled.input`
   font-size: 20px;
   border: none;
   outline: none;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding: 0 10px;
 
-  &:hover {
+  /* &:hover {
     background-color: #ffffff;
-  }
+  } */
 `;
 
 export const LabelStyled = styled.label`

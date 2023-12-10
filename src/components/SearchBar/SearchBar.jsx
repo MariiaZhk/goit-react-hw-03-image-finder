@@ -5,13 +5,11 @@ import {
   SearchInputStyled,
 } from './SearchBar.styled';
 
-export const SearchBar = ({ searchQuery, handleSubmit }) => {
+export const SearchBar = ({ searchQuery, handleSubmit, backgroundSVG }) => {
   return (
     <SearchBarWrap>
       <SearchFormStyled onSubmit={handleSubmit}>
-        <SearchBtnStyled type="submit">
-          <span>Search</span>
-        </SearchBtnStyled>
+        <SearchBtnStyled type="submit"></SearchBtnStyled>
 
         <SearchInputStyled
           name="searchQuery"
