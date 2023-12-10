@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const LoadBtnStyled = styled.button`
   width: 200px;
   height: 50px;
-  margin: 10px auto;
+  margin: 0 auto;
   padding: 10px 16px;
   border-radius: 2px;
   background-color: #5daef1;
