@@ -7,5 +7,3 @@ export const ImageGalleryItem = ({ id, webformatURL, tags }) => {
     </GalleryItemStyled>
   );
 };
-
-// onClickModal src=largeImageURL,
