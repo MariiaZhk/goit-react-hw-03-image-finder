@@ -8,10 +8,10 @@ export const GalleryItemStyled = styled.li`
 `;
 
 export const GalleryImgStyled = styled.img`
-  min-width: 40px;
+  min-width: 400px;
   min-height: 300px;
-  max-width: 440px;
-  max-height: 340px;
+  max-width: 400px;
+  max-height: 300px;
   object-fit: cover;
   border-radius: 4px;
   box-shadow: 0 4px 8px 0 rgba(215, 212, 212, 0.323),
