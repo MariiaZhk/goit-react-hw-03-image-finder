@@ -1,25 +1,30 @@
 import styled from 'styled-components';
 
 export const LoadBtnStyled = styled.button`
-  display: block;
-  margin: 20px auto;
-  margin-bottom: 50px;
   width: 200px;
-  height: 60px;
-  background: #5daef1;
+  height: 50px;
+  margin: 10px auto;
+  padding: 10px 16px;
+  border-radius: 2px;
+  background-color: #5daef1;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  display: inline-block;
   color: #fff;
-  border: 1px solid #999797;
-  border-radius: 20px;
-  box-shadow: 0 4px 4px 0 rgba(241, 234, 234, 0.323),
-    0 4px 4px 0 rgba(189, 188, 188, 0.19);
-  text-shadow: none;
-  font-size: 24px;
+  border: 0;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 500;
+  min-width: 180px;
+  box-shadow: 0 4px 4px 0 rgba(134, 134, 134, 0.323),
+    0 4px 4px 0 rgba(101, 101, 101, 0.19);
 
-  &:hover {
-    background: #016abc;
-    color: #fff;
-    border: 1px solid #999797;
-    border-radius: 20px;
-    text-shadow: none;
+  &:hover,
+  :focus {
+    background-color: #016abc;
   }
 `;

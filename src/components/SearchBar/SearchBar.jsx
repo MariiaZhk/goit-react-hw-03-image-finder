@@ -1,4 +1,5 @@
 import {
+  SearchBarWrap,
   SearchBtnStyled,
   SearchFormStyled,
   SearchInputStyled,
@@ -6,7 +7,7 @@ import {
 
 export const SearchBar = ({ searchQuery, handleSubmit }) => {
   return (
-    <header>
+    <SearchBarWrap>
       <SearchFormStyled onSubmit={handleSubmit}>
         <SearchBtnStyled type="submit">
           <span>Search</span>
@@ -21,6 +22,6 @@ export const SearchBar = ({ searchQuery, handleSubmit }) => {
           placeholder="Search images and photos"
         />
       </SearchFormStyled>
-    </header>
+    </SearchBarWrap>
   );
 };

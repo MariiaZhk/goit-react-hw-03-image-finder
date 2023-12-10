@@ -1,53 +1,76 @@
 import styled from 'styled-components';
 
-export const SearchBtnStyled = styled.button`
+export const SearchBarWrap = styled.div`
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 1100;
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 200px;
-  height: 60px;
-  background: #5daef1;
+  align-items: center;
+  min-height: 64px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   color: #fff;
-  border: 1px solid #999797;
-  border-radius: 20px;
-  box-shadow: 0 4px 4px 0 rgba(241, 234, 234, 0.323),
-    0 4px 4px 0 rgba(189, 188, 188, 0.19);
-  text-shadow: none;
-  font-size: 24px;
+  background-color: #5daef1;
+  box-shadow: 0 4px 4px 0 rgba(134, 134, 134, 0.323),
+    0 4px 4px 0 rgba(144, 143, 143, 0.19);
+`;
+
+export const SearchBtnStyled = styled.button`
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  background-image: url('https://image.flaticon.com/icons/svg/149/149852.svg');
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.6;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  outline: none;
 
   &:hover {
-    background: #016abc;
-    color: #fff;
-    border: 1px solid #999797;
-    border-radius: 20px;
-    text-shadow: none;
+    opacity: 1;
   }
 `;
 
 export const SearchFormStyled = styled.form`
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
-  width: 800px;
-  margin: 30px auto;
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 3px;
+  overflow: hidden;
 `;
 
 export const SearchInputStyled = styled.input`
-  height: 60px;
-  flex-grow: 1;
-  font-size: 24px;
-  padding: 0 15px;
-  border: 1px solid #999797;
-  border-radius: 20px;
-  background-color: #cccaca;
-  box-shadow: 0 4px 4px 0 rgba(241, 234, 234, 0.323),
-    0 4px 4px 0 rgba(189, 188, 188, 0.19);
-  text-shadow: none;
+  display: inline-block;
+  width: 100%;
+  font: inherit;
+  font-size: 20px;
+  border: none;
   outline: none;
-  color: #2f2e2e;
+  padding-left: 4px;
+  padding-right: 4px;
 
   &:hover {
     background-color: #ffffff;
   }
+`;
+
+export const LabelStyled = styled.label`
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0;
 `;
